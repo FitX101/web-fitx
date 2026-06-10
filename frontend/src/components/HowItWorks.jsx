@@ -28,11 +28,11 @@ export const HowItWorks = () => (
     <div className="max-w-7xl mx-auto px-5 md:px-8">
       <div className="grid grid-cols-12 gap-8 items-end">
         <div className="col-span-12 md:col-span-7">
-          <div className="text-xs md:text-sm font-bold tracking-[0.25em] uppercase text-[#FF3B30]">
+          <div className="text-xs md:text-sm font-bold tracking-[0.25em] uppercase text-[#D4AF37]">
             // How it works
           </div>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-tight mt-4 leading-[0.95]">
-            Three steps. <span className="text-[#FF3B30]">Real results.</span>
+            Three steps. <span className="text-[#D4AF37]">Real results.</span>
           </h2>
         </div>
         <p className="col-span-12 md:col-span-5 text-zinc-400">
@@ -54,7 +54,7 @@ export const HowItWorks = () => (
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="relative bg-[#0A0A0A] border border-white/5 rounded-md p-7 md:p-8 hover:border-white/20 transition-colors"
             >
-              <div className="absolute -top-4 left-7 font-display text-6xl font-black text-[#FF3B30] leading-none">
+              <div className="absolute -top-4 left-7 font-display text-6xl font-black text-[#D4AF37] leading-none">
                 0{i + 1}
               </div>
               <div className="pt-10">

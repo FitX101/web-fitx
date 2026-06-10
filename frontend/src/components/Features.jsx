@@ -51,11 +51,11 @@ export const Features = () => (
   <section id="features" data-testid="features-section" className="relative bg-[#0A0A0A] py-24 md:py-32">
     <div className="max-w-7xl mx-auto px-5 md:px-8">
       <div className="max-w-3xl">
-        <div className="text-xs md:text-sm font-bold tracking-[0.25em] uppercase text-[#FF3B30]">
+        <div className="text-xs md:text-sm font-bold tracking-[0.25em] uppercase text-[#D4AF37]">
           // Features
         </div>
         <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-tight mt-4 leading-[0.95]">
-          Built for the way you actually <span className="text-[#FF3B30]">train and eat</span>.
+          Built for the way you actually <span className="text-[#D4AF37]">train and eat</span>.
         </h2>
         <p className="mt-5 text-zinc-400 max-w-2xl">
           Every feature in FitX is shaped by behavior — what real people do on
@@ -77,7 +77,7 @@ export const Features = () => (
               className={`col-span-12 ${f.span} group relative bg-[#141414] border border-white/5 hover:border-white/20 rounded-md p-7 md:p-8 transition-all duration-300 hover:-translate-y-1`}
             >
               <div className="flex items-center justify-between">
-                <div className="h-12 w-12 grid place-items-center rounded-md bg-[#FF3B30]/10 border border-[#FF3B30]/30 text-[#FF3B30]">
+                <div className="h-12 w-12 grid place-items-center rounded-md bg-[#D4AF37]/10 border border-[#D4AF37]/30 text-[#D4AF37]">
                   <Icon size={22} strokeWidth={2} />
                 </div>
                 <div className="text-[10px] uppercase tracking-[0.25em] text-zinc-600">

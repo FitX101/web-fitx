@@ -17,7 +17,7 @@ export const Footer = () => (
         <div className="flex items-center gap-2.5">
           <img src={APP_ICON} alt="FitX" className="h-10 w-10 rounded-lg" />
           <span className="font-display text-3xl font-black tracking-tight uppercase">
-            Fit<span className="text-[#FF3B30]">X</span>
+            Fit<span className="text-[#D4AF37]">X</span>
           </span>
         </div>
         <p className="mt-5 text-zinc-400 max-w-md text-sm leading-relaxed">
@@ -31,7 +31,7 @@ export const Footer = () => (
             target="_blank"
             rel="noopener noreferrer"
             data-testid="footer-app-store"
-            className="inline-flex items-center gap-2 px-4 h-11 rounded-md bg-white text-black font-display font-bold uppercase tracking-wider text-sm hover:bg-[#FF3B30] hover:text-white transition-colors"
+            className="inline-flex items-center gap-2 px-4 h-11 rounded-md bg-white text-black font-display font-bold uppercase tracking-wider text-sm hover:bg-[#D4AF37] hover:text-black transition-colors"
           >
             <FaApple /> App Store
           </a>
@@ -40,7 +40,7 @@ export const Footer = () => (
             target="_blank"
             rel="noopener noreferrer"
             data-testid="footer-play-store"
-            className="inline-flex items-center gap-2 px-4 h-11 rounded-md bg-[#FF3B30] text-white font-display font-bold uppercase tracking-wider text-sm hover:bg-[#E6352B] transition-colors"
+            className="inline-flex items-center gap-2 px-4 h-11 rounded-md bg-[#D4AF37] text-black font-display font-bold uppercase tracking-wider text-sm hover:bg-[#B8941F] transition-colors"
           >
             <FaGooglePlay /> Play Store
           </a>
@@ -50,24 +50,24 @@ export const Footer = () => (
       <div className="md:col-span-2">
         <div className="text-xs uppercase tracking-[0.25em] text-zinc-500">Product</div>
         <ul className="mt-4 space-y-3 text-sm">
-          <li><a href="/#features" className="text-zinc-300 hover:text-[#FF3B30]">Features</a></li>
-          <li><a href="/#how-it-works" className="text-zinc-300 hover:text-[#FF3B30]">How it works</a></li>
-          <li><a href="/#pricing" className="text-zinc-300 hover:text-[#FF3B30]">Pricing</a></li>
-          <li><Link to="/blog" className="text-zinc-300 hover:text-[#FF3B30]">Blog</Link></li>
+          <li><a href="/#features" className="text-zinc-300 hover:text-[#D4AF37]">Features</a></li>
+          <li><a href="/#how-it-works" className="text-zinc-300 hover:text-[#D4AF37]">How it works</a></li>
+          <li><a href="/#pricing" className="text-zinc-300 hover:text-[#D4AF37]">Pricing</a></li>
+          <li><Link to="/blog" className="text-zinc-300 hover:text-[#D4AF37]">Blog</Link></li>
         </ul>
       </div>
 
       <div className="md:col-span-2">
         <div className="text-xs uppercase tracking-[0.25em] text-zinc-500">Company</div>
         <ul className="mt-4 space-y-3 text-sm">
-          <li><a href="/#contact" className="text-zinc-300 hover:text-[#FF3B30]">Contact</a></li>
+          <li><a href="/#contact" className="text-zinc-300 hover:text-[#D4AF37]">Contact</a></li>
           <li>
-            <a href="https://fitxglobal.com/privacy-policy/" target="_blank" rel="noopener noreferrer" className="text-zinc-300 hover:text-[#FF3B30]">
+            <a href="https://fitxglobal.com/privacy-policy/" target="_blank" rel="noopener noreferrer" className="text-zinc-300 hover:text-[#D4AF37]">
               Privacy Policy
             </a>
           </li>
           <li>
-            <a href={`mailto:${SUPPORT_EMAIL}`} className="text-zinc-300 hover:text-[#FF3B30]">
+            <a href={`mailto:${SUPPORT_EMAIL}`} className="text-zinc-300 hover:text-[#D4AF37]">
               Support
             </a>
           </li>
@@ -83,13 +83,13 @@ export const Footer = () => (
               target="_blank"
               rel="noopener noreferrer"
               data-testid="footer-instagram"
-              className="inline-flex items-center gap-2 text-zinc-300 hover:text-[#FF3B30]"
+              className="inline-flex items-center gap-2 text-zinc-300 hover:text-[#D4AF37]"
             >
               <FaInstagram /> @fitx_global
             </a>
           </li>
           <li>
-            <a href={`mailto:${SUPPORT_EMAIL}`} className="text-zinc-300 hover:text-[#FF3B30]">
+            <a href={`mailto:${SUPPORT_EMAIL}`} className="text-zinc-300 hover:text-[#D4AF37]">
               {SUPPORT_EMAIL}
             </a>
           </li>

@@ -33,11 +33,11 @@ export const Newsletter = () => {
       className="relative bg-[#0A0A0A] py-20 md:py-28 border-t border-white/5"
     >
       <div className="max-w-4xl mx-auto px-5 md:px-8 text-center">
-        <div className="text-xs md:text-sm font-bold tracking-[0.25em] uppercase text-[#FF3B30]">
+        <div className="text-xs md:text-sm font-bold tracking-[0.25em] uppercase text-[#D4AF37]">
           // Newsletter
         </div>
         <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-tight mt-4 leading-[0.95]">
-          The fitness drop. <span className="text-[#FF3B30]">Weekly.</span>
+          The fitness drop. <span className="text-[#D4AF37]">Weekly.</span>
         </h2>
         <p className="mt-4 text-zinc-400 max-w-xl mx-auto">
           Workouts, nutrition science and behind-the-scenes from the FitX team —
@@ -56,13 +56,13 @@ export const Newsletter = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             data-testid="newsletter-email-input"
-            className="h-12 bg-[#141414] border-white/10 text-white placeholder:text-zinc-500 focus-visible:ring-[#FF3B30]"
+            className="h-12 bg-[#141414] border-white/10 text-white placeholder:text-zinc-500 focus-visible:ring-[#D4AF37]"
           />
           <button
             type="submit"
             disabled={loading}
             data-testid="newsletter-submit"
-            className="h-12 px-7 rounded-md bg-[#FF3B30] text-white font-display font-bold uppercase tracking-widest text-sm hover:bg-[#E6352B] transition-colors disabled:opacity-60"
+            className="h-12 px-7 rounded-md bg-[#D4AF37] text-black font-display font-bold uppercase tracking-widest text-sm hover:bg-[#B8941F] transition-colors disabled:opacity-60"
           >
             {loading ? "Joining..." : "Join"}
           </button>

@@ -41,7 +41,7 @@ export const Navbar = () => {
         <Link to="/" data-testid="nav-logo" className="flex items-center gap-2.5">
           <img src={APP_ICON} alt="FitX" className="h-9 w-9 rounded-lg" />
           <span className="font-display text-2xl font-black tracking-tight uppercase">
-            Fit<span className="text-[#FF3B30]">X</span>
+            Fit<span className="text-[#D4AF37]">X</span>
           </span>
         </Link>
 
@@ -75,7 +75,7 @@ export const Navbar = () => {
             rel="noopener noreferrer"
             data-testid="nav-play-store-btn"
             aria-label="Get it on Google Play"
-            className="inline-flex items-center gap-2 px-4 h-10 rounded-md bg-[#FF3B30] text-white text-sm font-bold uppercase tracking-wider hover:bg-[#E6352B] transition-colors"
+            className="inline-flex items-center gap-2 px-4 h-10 rounded-md bg-[#D4AF37] text-black text-sm font-bold uppercase tracking-wider hover:bg-[#B8941F] transition-colors"
           >
             <FaGooglePlay /> Get App
           </a>
@@ -99,7 +99,7 @@ export const Navbar = () => {
                 key={l.href}
                 href={l.href}
                 data-testid={`mobile-${l.testId}`}
-                className="text-base font-medium text-zinc-200 hover:text-[#FF3B30] uppercase tracking-wider"
+                className="text-base font-medium text-zinc-200 hover:text-[#D4AF37] uppercase tracking-wider"
               >
                 {l.label}
               </a>
@@ -119,7 +119,7 @@ export const Navbar = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 data-testid="mobile-play-store-btn"
-                className="flex-1 inline-flex items-center justify-center gap-2 px-4 h-11 rounded-md bg-[#FF3B30] text-white font-bold"
+                className="flex-1 inline-flex items-center justify-center gap-2 px-4 h-11 rounded-md bg-[#D4AF37] text-black font-bold"
               >
                 <FaGooglePlay /> Play Store
               </a>

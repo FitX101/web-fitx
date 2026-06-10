@@ -28,11 +28,11 @@ export const Testimonials = () => (
   <section data-testid="testimonials-section" className="bg-[#141414] py-24 md:py-32 border-y border-white/5">
     <div className="max-w-7xl mx-auto px-5 md:px-8">
       <div className="max-w-3xl">
-        <div className="text-xs md:text-sm font-bold tracking-[0.25em] uppercase text-[#FF3B30]">
+        <div className="text-xs md:text-sm font-bold tracking-[0.25em] uppercase text-[#D4AF37]">
           // Loved by athletes
         </div>
         <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-tight mt-4 leading-[0.95]">
-          What the <span className="text-[#FF3B30]">community</span> says
+          What the <span className="text-[#D4AF37]">community</span> says
         </h2>
       </div>
 
@@ -45,7 +45,7 @@ export const Testimonials = () => (
           >
             <div className="flex gap-1 mb-4">
               {[...Array(5)].map((_, k) => (
-                <Star key={k} size={14} className="fill-[#FF3B30] text-[#FF3B30]" />
+                <Star key={k} size={14} className="fill-[#D4AF37] text-[#D4AF37]" />
               ))}
             </div>
             <p className="text-zinc-200 text-base leading-relaxed">&ldquo;{t.quote}&rdquo;</p>

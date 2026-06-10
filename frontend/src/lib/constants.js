@@ -15,7 +15,13 @@ export const SCREENSHOTS = [
 ];
 
 export const HERO_VIDEO =
-  "https://assets.mixkit.co/videos/preview/mixkit-man-training-with-a-kettlebell-at-the-gym-184-large.mp4";
+  "https://videos.pexels.com/video-files/3192198/3192198-hd_1920_1080_25fps.mp4";
+
+export const MOTION_VIDEOS = [
+  "https://videos.pexels.com/video-files/3192198/3192198-hd_1920_1080_25fps.mp4",
+  "https://videos.pexels.com/video-files/6975445/6975445-uhd_2732_1440_25fps.mp4",
+  "https://videos.pexels.com/video-files/3214448/3214448-uhd_2560_1440_25fps.mp4",
+];
 
 export const SUPPORT_EMAIL = "info@fitxglobal.com";
 export const SUPPORT_PHONE = "+91 99993 91307";

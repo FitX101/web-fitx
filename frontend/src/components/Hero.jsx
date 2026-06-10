@@ -14,10 +14,12 @@ export const Hero = () => {
         data-testid="hero-bg-video"
         className="absolute inset-0 h-full w-full object-cover"
         src={HERO_VIDEO}
+        poster="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1920&q=80&auto=format&fit=crop"
         autoPlay
         loop
         muted
         playsInline
+        preload="auto"
       />
       <div className="absolute inset-0 hero-overlay" />
       {/* Accent grid lines */}
@@ -40,7 +42,7 @@ export const Hero = () => {
               transition={{ duration: 0.6 }}
               className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/15 bg-white/5 backdrop-blur-md"
             >
-              <span className="h-2 w-2 rounded-full bg-[#FF3B30] fx-pulse" />
+              <span className="h-2 w-2 rounded-full bg-[#D4AF37] fx-pulse" />
               <span className="text-[11px] uppercase tracking-[0.25em] text-zinc-200">
                 AI Fitness & Diet Coach
               </span>
@@ -54,7 +56,7 @@ export const Hero = () => {
             >
               Train smarter.
               <br />
-              <span className="text-[#FF3B30]">Eat sharper.</span>
+              <span className="text-[#D4AF37]">Eat sharper.</span>
               <br />
               Live stronger.
             </motion.h1>
@@ -87,7 +89,7 @@ export const Hero = () => {
             >
               <div className="flex items-center gap-1.5">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} size={14} className="fill-[#FF3B30] text-[#FF3B30]" />
+                  <Star key={i} size={14} className="fill-[#D4AF37] text-[#D4AF37]" />
                 ))}
                 <span className="ml-1.5 text-zinc-300">4.8 rating</span>
               </div>
@@ -106,7 +108,7 @@ export const Hero = () => {
             className="hidden lg:flex col-span-5 justify-end"
           >
             <div className="relative fx-float">
-              <div className="absolute -inset-8 bg-[#FF3B30] opacity-20 blur-3xl rounded-full" />
+              <div className="absolute -inset-8 bg-[#D4AF37] opacity-20 blur-3xl rounded-full" />
               <div className="relative w-[290px] h-[600px] rounded-[44px] border-[10px] border-zinc-800 bg-zinc-900 shadow-2xl overflow-hidden">
                 <div className="absolute top-2 left-1/2 -translate-x-1/2 w-24 h-5 bg-black rounded-full z-10" />
                 <img
@@ -118,13 +120,13 @@ export const Hero = () => {
               <div className="absolute -bottom-6 -left-10 px-4 py-3 bg-[#141414] border border-white/10 rounded-md backdrop-blur-md">
                 <div className="text-[10px] uppercase tracking-widest text-zinc-500">Today</div>
                 <div className="font-display text-2xl font-black text-white">
-                  847 <span className="text-[#FF3B30] text-sm">kcal burned</span>
+                  847 <span className="text-[#D4AF37] text-sm">kcal burned</span>
                 </div>
               </div>
               <div className="absolute -top-4 -right-6 px-4 py-3 bg-[#141414] border border-white/10 rounded-md backdrop-blur-md">
                 <div className="text-[10px] uppercase tracking-widest text-zinc-500">Streak</div>
                 <div className="font-display text-2xl font-black text-white">
-                  21 <span className="text-[#FF3B30] text-sm">days</span>
+                  21 <span className="text-[#D4AF37] text-sm">days</span>
                 </div>
               </div>
             </div>

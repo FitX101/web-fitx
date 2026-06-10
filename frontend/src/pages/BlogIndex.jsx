@@ -26,11 +26,11 @@ export default function BlogIndex() {
     <main data-testid="blog-index-page" className="pt-32 pb-24 bg-[#0A0A0A] min-h-screen">
       <div className="max-w-7xl mx-auto px-5 md:px-8">
         <div className="max-w-3xl">
-          <div className="text-xs md:text-sm font-bold tracking-[0.25em] uppercase text-[#FF3B30]">
+          <div className="text-xs md:text-sm font-bold tracking-[0.25em] uppercase text-[#D4AF37]">
             // The FitX Journal
           </div>
           <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-black uppercase tracking-tight mt-5 leading-[0.95]">
-            Train. Eat. <span className="text-[#FF3B30]">Read.</span>
+            Train. Eat. <span className="text-[#D4AF37]">Read.</span>
           </h1>
           <p className="mt-5 text-zinc-400 text-base md:text-lg max-w-2xl">
             Workouts, nutrition science, and behind-the-scenes stories from the FitX team and community.
@@ -57,7 +57,7 @@ export default function BlogIndex() {
                 </div>
                 <div className="p-6">
                   <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.25em]">
-                    <span className="text-[#FF3B30]">{p.category}</span>
+                    <span className="text-[#D4AF37]">{p.category}</span>
                     <span className="text-zinc-500">{p.read_time}</span>
                   </div>
                   <h2 className="font-display text-xl md:text-2xl font-bold uppercase tracking-tight mt-4 text-white leading-tight">
@@ -66,7 +66,7 @@ export default function BlogIndex() {
                   <p className="mt-3 text-sm text-zinc-400 line-clamp-3">{p.excerpt}</p>
                   <div className="mt-5 flex items-center justify-between pt-4 border-t border-white/5">
                     <span className="text-xs text-zinc-500">{p.author}</span>
-                    <ArrowUpRight size={18} className="text-zinc-400 group-hover:text-[#FF3B30] transition-colors" />
+                    <ArrowUpRight size={18} className="text-zinc-400 group-hover:text-[#D4AF37] transition-colors" />
                   </div>
                 </div>
               </Link>

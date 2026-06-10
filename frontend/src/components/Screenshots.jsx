@@ -10,11 +10,11 @@ export const Screenshots = () => (
     <div className="max-w-7xl mx-auto px-5 md:px-8">
       <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
         <div>
-          <div className="text-xs md:text-sm font-bold tracking-[0.25em] uppercase text-[#FF3B30]">
+          <div className="text-xs md:text-sm font-bold tracking-[0.25em] uppercase text-[#D4AF37]">
             // Inside the app
           </div>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-tight mt-4 leading-[0.95] max-w-3xl">
-            A workout floor. <span className="text-[#FF3B30]">In your pocket.</span>
+            A workout floor. <span className="text-[#D4AF37]">In your pocket.</span>
           </h2>
         </div>
         <p className="max-w-md text-zinc-400">

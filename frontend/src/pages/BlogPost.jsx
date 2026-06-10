@@ -40,7 +40,7 @@ export default function BlogPost() {
       <main className="pt-32 pb-24 min-h-screen bg-[#0A0A0A]">
         <div className="max-w-3xl mx-auto px-5">
           <h1 className="font-display text-4xl font-black uppercase">Post not found</h1>
-          <Link to="/blog" className="mt-6 inline-block text-[#FF3B30]" data-testid="back-to-blog">
+          <Link to="/blog" className="mt-6 inline-block text-[#D4AF37]" data-testid="back-to-blog">
             ← Back to blog
           </Link>
         </div>
@@ -54,13 +54,13 @@ export default function BlogPost() {
         <Link
           to="/blog"
           data-testid="blog-back-link"
-          className="inline-flex items-center gap-2 text-sm uppercase tracking-widest text-zinc-400 hover:text-[#FF3B30]"
+          className="inline-flex items-center gap-2 text-sm uppercase tracking-widest text-zinc-400 hover:text-[#D4AF37]"
         >
           <ArrowLeft size={16} /> All articles
         </Link>
 
         <div className="mt-8 flex items-center gap-4 text-[10px] uppercase tracking-[0.25em]">
-          <span className="text-[#FF3B30]">{post.category}</span>
+          <span className="text-[#D4AF37]">{post.category}</span>
           <span className="text-zinc-500">{post.read_time}</span>
           <span className="text-zinc-500">{new Date(post.published_at).toDateString()}</span>
         </div>
@@ -86,7 +86,7 @@ export default function BlogPost() {
         </div>
 
         <div className="mt-16 p-7 md:p-10 bg-[#141414] border border-white/5 rounded-md">
-          <div className="text-xs uppercase tracking-[0.25em] text-[#FF3B30]">// Ready to start?</div>
+          <div className="text-xs uppercase tracking-[0.25em] text-[#D4AF37]">// Ready to start?</div>
           <h3 className="font-display text-2xl md:text-3xl font-bold uppercase tracking-tight mt-3">
             Download FitX free
           </h3>

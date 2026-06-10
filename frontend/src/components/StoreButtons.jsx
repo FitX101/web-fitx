@@ -16,7 +16,7 @@ export const StoreButtons = ({ variant = "default", source = "default" }) => {
         target="_blank"
         rel="noopener noreferrer"
         data-testid={`download-app-store-${source}`}
-        className={`${base} ${sizes} bg-white text-black border-white hover:bg-[#FF3B30] hover:text-white hover:border-[#FF3B30]`}
+        className={`${base} ${sizes} bg-white text-black border-white hover:bg-[#D4AF37] hover:text-black hover:border-[#D4AF37]`}
       >
         <FaApple className="text-2xl" />
         <span className="flex flex-col leading-tight text-left">
@@ -29,7 +29,7 @@ export const StoreButtons = ({ variant = "default", source = "default" }) => {
         target="_blank"
         rel="noopener noreferrer"
         data-testid={`download-play-store-${source}`}
-        className={`${base} ${sizes} bg-[#FF3B30] text-white border-[#FF3B30] hover:bg-[#E6352B] hover:border-[#E6352B]`}
+        className={`${base} ${sizes} bg-[#D4AF37] text-black border-[#D4AF37] hover:bg-[#B8941F] hover:border-[#B8941F]`}
       >
         <FaGooglePlay className="text-2xl" />
         <span className="flex flex-col leading-tight text-left">
