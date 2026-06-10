@@ -1,0 +1,82 @@
+{
+  "theme_and_archetype": {
+    "domain": "Fitness & Health App Promotion",
+    "theme": "Dark",
+    "archetype": "2 (Performance Pro)",
+    "description": "High energy, command-center feel for fitness. Uses deep obsidian anchors, sharp typography, and an electric blaze accent. Emphasizes elite athleticism, precision tracking, and a premium promotional vibe. The design is sleek, modern, and SEO-friendly."
+  },
+  "colors": {
+    "background_primary": "#0A0A0A",
+    "background_secondary": "#141414",
+    "surface": "#1A1A1A",
+    "accent_kinetic": "#FF3B30",
+    "accent_hover": "#E6352B",
+    "text_primary": "#FFFFFF",
+    "text_secondary": "#A1A1AA",
+    "border_subtle": "rgba(255, 255, 255, 0.1)",
+    "rules": "Avoid vibrating colors like lime green, and strictly NO purple/violet. Always apply 1px solid strokes for widget/card boundaries. Avoid soft diffuse shadows, prefer sharp tech-oriented contrast."
+  },
+  "typography": {
+    "heading_font": "Barlow Condensed",
+    "body_font": "DM Sans",
+    "font_pairings": [
+      "@font-face imports or Google Fonts link for Barlow Condensed (weights 600, 800, 900) and DM Sans (weights 400, 500, 700) must be included in index.css or index.html."
+    ],
+    "rules": {
+      "h1": "text-5xl md:text-6xl font-black tracking-tighter uppercase",
+      "h2": "text-4xl md:text-5xl font-bold tracking-tight uppercase",
+      "h3": "text-2xl md:text-3xl font-bold tracking-tight uppercase",
+      "h4": "text-xl font-bold tracking-tight uppercase",
+      "body": "text-base font-normal tracking-normal leading-relaxed text-zinc-400",
+      "overlines": "text-xs md:text-sm font-bold tracking-[0.2em] uppercase text-[#FF3B30]"
+    }
+  },
+  "spacing_and_layout": {
+    "global_spacing": "Generous spacing. Use py-20 or py-32 for main sections. p-6 or p-8 for cards.",
+    "bento_grid": "For the features section, use MODE A: THE TETRIS GRID. Mix spans (col-span-12 md:col-span-8 vs md:col-span-4) with gap-6 to gap-8. Create visual tension, never fill a grid with equal squares.",
+    "hero_overlay": "Must have an overlay over the video background: bg-black/50 to bg-black/70 to ensure Barlow Condensed headings pop with absolute clarity."
+  },
+  "ui_components": {
+    "navbar": "Sticky, glassmorphism applied: backdrop-blur-xl bg-black/60 border-b border-white/10. Include FitX Logo and direct download buttons.",
+    "buttons": "Primary CTA must use the #FF3B30 kinetic trigger color with sharp corners or very slight rounding (rounded-md max). Include hover:bg-[#E6352B] hover:text-white transition-all.",
+    "phone_mockup": "Floating 3D phone mockup or sleek border radius container showcasing the app screenshots. Add subtle translate-y animations to simulate floating.",
+    "forms": "Newsletter form must use Shadcn components (customized), heavily stylized to fit the dark theme: bg-[#141414] border-[#333] focus:ring-[#FF3B30].",
+    "cards": "Solid dark surfaces (bg-[#141414]), 1px border border-white/5, NO heavy drop shadows."
+  },
+  "motion_and_interactions": {
+    "hover_states": "All interactive elements must explicitly change color on hover. E.g. hover:text-[#FF3B30]. Cards should lift slightly (-translate-y-1) and increase border opacity (border-white/20).",
+    "scroll_animations": "Use Framer Motion for staggered fade-up entrances. Start opacity-0 translate-y-8 to opacity-100 translate-y-0. Important: don't over-animate, keep it athletic and snappy.",
+    "video_background": "Set to loop, muted, autoplay, playsinline. Absolutely crucial for the hero section."
+  },
+  "media_urls": {
+    "app_icon": "https://play-lh.googleusercontent.com/HH0v9kazqAJAKemm4uTVhBJTgNoUxahHvbbGusz1kZ9-8O0k_Z5qfe4prLT-MiKGjrAjJS2c8orC0yVB9WHCQJE=w240-h480-rw",
+    "app_screenshots": [
+      "https://play-lh.googleusercontent.com/CqfByOAcQWOIOeOISeCPwgt0rgGMZsZy0m_AxYfG2vCP-xYep2O_CgeoRoi3o0ylGZIat2wPR-2UFMWdWI4EdHA=w526-h296-rw",
+      "https://play-lh.googleusercontent.com/bOudLm8skRA-Lb_QURmkqrXUoksz4PmUM9PvVgk241qFSM0ZpAuvXLl6l8qHtBDrXu9Dy9xK3hXIeqz6Ks44Ig=w526-h296-rw",
+      "https://play-lh.googleusercontent.com/3GMJrH5pC3kYU3kiVAZeVysEVtWmDNtfX7XmGvxzZn35SJ_CAAyC5wp4i54nMm3y9qdEdQ4m0IcPtiDaDjBagA=w526-h296-rw",
+      "https://play-lh.googleusercontent.com/FWdY1bLu5_pHQDeOJLYcjP6Q5hpYxK8MUW6bny3KrXsd1DsQeuImIdCO_wHhb_QnTTjh9LsVKhKHxJRujIrTsYc=w526-h296-rw",
+      "https://play-lh.googleusercontent.com/AcGCiGSkoJMrUfjC1Wl9LRwet9aDpPEp4vXPvfSIPef6AqI0QOTeck6lntEHJyVWijpjTBkW34Zd8G3hngAOtA=w526-h296-rw"
+    ],
+    "hero_video_background": "https://assets.mixkit.co/videos/preview/mixkit-man-training-with-a-kettlebell-at-the-gym-184-large.mp4",
+    "blog_images": [
+      "https://images.unsplash.com/photo-1637430308606-86576d8fef3c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHwxfHxmaXRuZXNzJTIwd29ya291dCUyMGd5bSUyMHRyYWluaW5nfGVufDB8fHx8MTc4MTA4MjMxMXww&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1722925541142-5db2668ca492?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHwzfHxmaXRuZXNzJTIwd29ya291dCUyMGd5bSUyMHRyYWluaW5nfGVufDB8fHx8MTc4MTA4MjMxMXww&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1543352632-5a4b24e4d2a6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwxfHxoZWFsdGh5JTIwZGlldCUyMG1lYWwlMjBwcmVwJTIwbnV0cml0aW9ufGVufDB8fHx8MTc4MTA4MjMxMXww&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1606858374191-c18040e98ad7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHw0fHxoZWFsdGh5JTIwZGlldCUyMG1lYWwlMjBwcmVwJTIwbnV0cml0aW9ufGVufDB8fHx8MTc4MTA4MjMxMXww&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1667499745120-f9bcef8f584e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwyfHxoZWFsdGh5JTIwZGlldCUyMG1lYWwlMjBwcmVwJTIwbnV0cml0aW9ufGVufDB8fHx8MTc4MTA4MjMxMXww&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1548690312-e3b507d8c110?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHwyfHxmaXRuZXNzJTIwd29ya291dCUyMGd5bSUyMHRyYWluaW5nfGVufDB8fHx8MTc4MTA4MjMxMXww&ixlib=rb-4.1.0&q=85"
+    ],
+    "testimonial_portraits": [
+      "https://images.unsplash.com/photo-1601412436009-d964bd02edbc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwxfHxhdGhsZXRpYyUyMHBvcnRyYWl0JTIwaGVhZHNob3R8ZW58MHx8fHwxNzgxMDgyMzExfDA&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1565884280295-98eb83e41c65?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwyfHxhdGhsZXRpYyUyMHBvcnRyYWl0JTIwaGVhZHNob3R8ZW58MHx8fHwxNzgxMDgyMzExfDA&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1610903866883-c280999dcc0e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwzfHxhdGhsZXRpYyUyMHBvcnRyYWl0JTIwaGVhZHNob3R8ZW58MHx8fHwxNzgxMDgyMzExfDA&ixlib=rb-4.1.0&q=85"
+    ]
+  },
+  "instructions_to_main_agent": {
+    "project_structure": "Ensure routing is handled (react-router-dom) to support individual blog pages via /blog/:slug. Seed the blog data in a frontend constant for now, simulating an API or static generation.",
+    "testing_attributes": "CRITICAL: You MUST include standard kebab-case, role-based `data-testid` attributes on every interactive element (e.g. data-testid=\"download-app-store-hero\", data-testid=\"newsletter-submit\", data-testid=\"nav-blog-link\").",
+    "icons_library": "Use `react-icons` for App Store and Play Store logos (e.g., FaApple, FaGooglePlay). Add it via `yarn add react-icons` if not present. Use lucide-react for UI icons.",
+    "seo_and_promotion": "This site is heavily promotional. All main CTAs must redirect to the respective app stores. Ensure links are set up properly. Use semantic HTML (header, main, section, footer, article for blogs).",
+    "framework_rules": "Remember the project uses .js files, NOT .tsx files. Use pure React components. Avoid typescript types. Avoid heavy Shadcn wrapper layers if pure HTML+Tailwind is more expressive for the marketing page, but DO use Shadcn for the newsletter inputs/forms."
+  }
+}
