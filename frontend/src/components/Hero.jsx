@@ -1,36 +1,74 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { HERO_VIDEO_SEQUENCE, SCREENSHOTS } from "@/lib/constants";
 import { StoreButtons } from "@/components/StoreButtons";
 import { Star } from "lucide-react";
 
 export const Hero = () => {
-  const [videoIdx, setVideoIdx] = useState(0);
-  const videoRef = useRef(null);
+  const [activeIdx, setActiveIdx] = useState(0);
+  const videoARef = useRef(null);
+  const videoBRef = useRef(null);
 
-  const handleEnded = () => {
-    const next = (videoIdx + 1) % HERO_VIDEO_SEQUENCE.length;
-    setVideoIdx(next);
+  const handleEnded = (which) => {
+    // Advance to the next clip and swap active layer for a smooth crossfade
+    setActiveIdx((prev) => (prev + 1) % HERO_VIDEO_SEQUENCE.length);
+    // Start the newly-active layer after the fade begins
+    setTimeout(() => {
+      const target = which === "A" ? videoBRef.current : videoARef.current;
+      if (target) {
+        try {
+          target.currentTime = 0;
+          target.play().catch(() => {});
+        } catch (_) {}
+      }
+    }, 50);
   };
+
+  useEffect(() => {
+    // Preload both clips so the crossfade is seamless
+    [videoARef.current, videoBRef.current].forEach((v) => {
+      if (v) {
+        try { v.load(); } catch (_) {}
+      }
+    });
+  }, []);
+
+  const clipA = HERO_VIDEO_SEQUENCE[0];
+  const clipB = HERO_VIDEO_SEQUENCE[1] || HERO_VIDEO_SEQUENCE[0];
+  const showA = activeIdx % 2 === 0;
 
   return (
     <section
       data-testid="hero-section"
       className="relative min-h-[100svh] w-full overflow-hidden bg-black"
     >
-      {/* Video background — cycles through cinematic gym clips */}
+      {/* Clip A — Deadlift */}
       <video
-        key={videoIdx}
-        ref={videoRef}
+        ref={videoARef}
         data-testid="hero-bg-video"
-        className="absolute inset-0 h-full w-full object-cover"
-        src={HERO_VIDEO_SEQUENCE[videoIdx]}
+        className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-[1200ms] ease-in-out ${
+          showA ? "opacity-100" : "opacity-0"
+        }`}
+        src={clipA}
         poster="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=80&auto=format&fit=crop"
         autoPlay
         muted
         playsInline
         preload="auto"
-        onEnded={handleEnded}
+        onEnded={() => handleEnded("A")}
+      />
+      {/* Clip B — Standing dumbbell bicep curl */}
+      <video
+        ref={videoBRef}
+        data-testid="hero-bg-video-b"
+        className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-[1200ms] ease-in-out ${
+          showA ? "opacity-0" : "opacity-100"
+        }`}
+        src={clipB}
+        muted
+        playsInline
+        preload="auto"
+        onEnded={() => handleEnded("B")}
       />
       <div className="absolute inset-0 hero-overlay" />
       {/* Accent grid lines */}

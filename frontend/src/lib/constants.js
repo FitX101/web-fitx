@@ -14,20 +14,15 @@ export const SCREENSHOTS = [
   "https://play-lh.googleusercontent.com/AcGCiGSkoJMrUfjC1Wl9LRwet9aDpPEp4vXPvfSIPef6AqI0QOTeck6lntEHJyVWijpjTBkW34Zd8G3hngAOtA=w526-h296-rw",
 ];
 
+// Hero cinematic sequence:
+// Clip A: heavy deadlift (full body, gym setting)
+// Clip B: standing dumbbell bicep curl (full body, gym setting)
 export const HERO_VIDEO =
-  "https://videos.pexels.com/video-files/5319070/5319070-hd_1920_1080_25fps.mp4";
+  "https://videos.pexels.com/video-files/9778003/9778003-hd_1920_1080_25fps.mp4";
 
 export const HERO_VIDEO_SEQUENCE = [
-  "https://videos.pexels.com/video-files/5319070/5319070-hd_1920_1080_25fps.mp4",
-  "https://videos.pexels.com/video-files/5319072/5319072-hd_1920_1080_25fps.mp4",
-  "https://videos.pexels.com/video-files/5319063/5319063-hd_1920_1080_25fps.mp4",
-  "https://videos.pexels.com/video-files/2795751/2795751-hd_1920_1080_25fps.mp4",
-];
-
-export const MOTION_VIDEOS = [
-  "https://videos.pexels.com/video-files/2795751/2795751-hd_1920_1080_25fps.mp4",
-  "https://videos.pexels.com/video-files/2795744/2795744-hd_1920_1080_25fps.mp4",
-  "https://videos.pexels.com/video-files/2795738/2795738-hd_1920_1080_25fps.mp4",
+  "https://videos.pexels.com/video-files/9778003/9778003-hd_1920_1080_25fps.mp4",
+  "https://videos.pexels.com/video-files/5319430/5319430-hd_1920_1080_25fps.mp4",
 ];
 
 export const SUPPORT_EMAIL = "info@fitxglobal.com";
