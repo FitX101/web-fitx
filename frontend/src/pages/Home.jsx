@@ -1,6 +1,7 @@
 import { Hero } from "@/components/Hero";
 import { Stats } from "@/components/Stats";
 import { Features } from "@/components/Features";
+import { UnlockedFeatures } from "@/components/UnlockedFeatures";
 import { HowItWorks } from "@/components/HowItWorks";
 import { Screenshots } from "@/components/Screenshots";
 import { Pricing } from "@/components/Pricing";
@@ -14,6 +15,7 @@ export default function Home() {
     <main data-testid="home-page">
       <Hero />
       <Stats />
+      <UnlockedFeatures />
       <Features />
       <HowItWorks />
       <Screenshots />

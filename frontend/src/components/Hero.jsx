@@ -1,25 +1,36 @@
+import { useState, useRef } from "react";
 import { motion } from "framer-motion";
-import { HERO_VIDEO, SCREENSHOTS } from "@/lib/constants";
+import { HERO_VIDEO_SEQUENCE, SCREENSHOTS } from "@/lib/constants";
 import { StoreButtons } from "@/components/StoreButtons";
 import { Star } from "lucide-react";
 
 export const Hero = () => {
+  const [videoIdx, setVideoIdx] = useState(0);
+  const videoRef = useRef(null);
+
+  const handleEnded = () => {
+    const next = (videoIdx + 1) % HERO_VIDEO_SEQUENCE.length;
+    setVideoIdx(next);
+  };
+
   return (
     <section
       data-testid="hero-section"
       className="relative min-h-[100svh] w-full overflow-hidden bg-black"
     >
-      {/* Video background */}
+      {/* Video background — cycles through cinematic gym clips */}
       <video
+        key={videoIdx}
+        ref={videoRef}
         data-testid="hero-bg-video"
         className="absolute inset-0 h-full w-full object-cover"
-        src={HERO_VIDEO}
+        src={HERO_VIDEO_SEQUENCE[videoIdx]}
         poster="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=80&auto=format&fit=crop"
         autoPlay
-        loop
         muted
         playsInline
         preload="auto"
+        onEnded={handleEnded}
       />
       <div className="absolute inset-0 hero-overlay" />
       {/* Accent grid lines */}

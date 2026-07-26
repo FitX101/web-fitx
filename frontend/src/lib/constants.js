@@ -15,14 +15,19 @@ export const SCREENSHOTS = [
 ];
 
 export const HERO_VIDEO =
-  "https://videos.pexels.com/video-files/2795751/2795751-hd_1920_1080_25fps.mp4";
+  "https://videos.pexels.com/video-files/5319070/5319070-hd_1920_1080_25fps.mp4";
+
+export const HERO_VIDEO_SEQUENCE = [
+  "https://videos.pexels.com/video-files/5319070/5319070-hd_1920_1080_25fps.mp4",
+  "https://videos.pexels.com/video-files/5319072/5319072-hd_1920_1080_25fps.mp4",
+  "https://videos.pexels.com/video-files/5319063/5319063-hd_1920_1080_25fps.mp4",
+  "https://videos.pexels.com/video-files/2795751/2795751-hd_1920_1080_25fps.mp4",
+];
 
 export const MOTION_VIDEOS = [
   "https://videos.pexels.com/video-files/2795751/2795751-hd_1920_1080_25fps.mp4",
   "https://videos.pexels.com/video-files/2795744/2795744-hd_1920_1080_25fps.mp4",
   "https://videos.pexels.com/video-files/2795738/2795738-hd_1920_1080_25fps.mp4",
-  "https://videos.pexels.com/video-files/2795748/2795748-hd_1920_1080_25fps.mp4",
-  "https://videos.pexels.com/video-files/2795749/2795749-hd_1920_1080_25fps.mp4",
 ];
 
 export const SUPPORT_EMAIL = "info@fitxglobal.com";
