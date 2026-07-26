@@ -5,7 +5,7 @@ export const Screenshots = () => (
   <section
     id="screenshots"
     data-testid="screenshots-section"
-    className="relative bg-[#0A0A0A] py-24 md:py-32 overflow-hidden"
+    className="relative bg-[#0D0D0D] py-24 md:py-32 overflow-hidden"
   >
     <div className="max-w-7xl mx-auto px-5 md:px-8">
       <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
@@ -49,8 +49,8 @@ export const Screenshots = () => (
         ))}
       </div>
       {/* edge fades */}
-      <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#0A0A0A] to-transparent pointer-events-none" />
-      <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-[#0A0A0A] to-transparent pointer-events-none" />
+      <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#0D0D0D] to-transparent pointer-events-none" />
+      <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-[#0D0D0D] to-transparent pointer-events-none" />
     </div>
   </section>
 );

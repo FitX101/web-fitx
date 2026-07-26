@@ -10,15 +10,12 @@ import {
 export const Footer = () => (
   <footer
     data-testid="site-footer"
-    className="relative bg-[#0A0A0A] border-t border-white/10 pt-16 pb-8"
+    className="relative bg-[#0D0D0D] border-t border-white/10 pt-16 pb-8"
   >
     <div className="max-w-7xl mx-auto px-5 md:px-8 grid grid-cols-1 md:grid-cols-12 gap-10">
       <div className="md:col-span-5">
-        <div className="flex items-center gap-2.5">
-          <img src={APP_ICON} alt="FitX" className="h-10 w-10 rounded-lg" />
-          <span className="font-display text-3xl font-black tracking-tight uppercase">
-            Fit<span className="text-[#D4AF37]">X</span>
-          </span>
+        <div className="flex items-center">
+          <img src={APP_ICON} alt="FitX — Elevate Your Fitness Journey" className="h-20 w-auto object-contain" />
         </div>
         <p className="mt-5 text-zinc-400 max-w-md text-sm leading-relaxed">
           FitX is the AI fitness & diet coach in your pocket. Built by athletes,
@@ -53,7 +50,7 @@ export const Footer = () => (
           <li><a href="/#features" className="text-zinc-300 hover:text-[#D4AF37]">Features</a></li>
           <li><a href="/#how-it-works" className="text-zinc-300 hover:text-[#D4AF37]">How it works</a></li>
           <li><a href="/#pricing" className="text-zinc-300 hover:text-[#D4AF37]">Pricing</a></li>
-          <li><Link to="/blog" className="text-zinc-300 hover:text-[#D4AF37]">Blog</Link></li>
+          <li><Link to="/blog" className="text-zinc-300 hover:text-[#E5C158]">Journal</Link></li>
         </ul>
       </div>
 

@@ -25,7 +25,7 @@ const TESTIMONIALS = [
 ];
 
 export const Testimonials = () => (
-  <section data-testid="testimonials-section" className="bg-[#141414] py-24 md:py-32 border-y border-white/5">
+  <section data-testid="testimonials-section" className="bg-[#121212] py-24 md:py-32 border-y border-white/5">
     <div className="max-w-7xl mx-auto px-5 md:px-8">
       <div className="max-w-3xl">
         <div className="text-xs md:text-sm font-bold tracking-[0.25em] uppercase text-[#D4AF37]">
@@ -41,7 +41,7 @@ export const Testimonials = () => (
           <div
             key={i}
             data-testid={`testimonial-${i}`}
-            className="bg-[#0A0A0A] border border-white/5 rounded-md p-7 md:p-8 hover:border-white/20 transition-colors"
+            className="bg-[#0D0D0D] border border-white/5 rounded-md p-7 md:p-8 hover:border-white/20 transition-colors"
           >
             <div className="flex gap-1 mb-4">
               {[...Array(5)].map((_, k) => (

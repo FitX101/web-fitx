@@ -3,14 +3,15 @@
 @tailwind utilities;
 
 :root {
-    --fx-bg: #0a0a0a;
-    --fx-bg-2: #141414;
+    --fx-bg: #0d0d0d;
+    --fx-bg-2: #121212;
     --fx-surface: #1a1a1a;
     --fx-accent: #d4af37;
+    --fx-accent-2: #e5c158;
     --fx-accent-hover: #b8941f;
     --fx-text: #ffffff;
     --fx-text-2: #a1a1aa;
-    --fx-border: rgba(255, 255, 255, 0.1);
+    --fx-border: rgba(255, 255, 255, 0.08);
 }
 
 html, body {
@@ -20,6 +21,21 @@ html, body {
     font-family: "DM Sans", system-ui, -apple-system, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.text-gold-gradient {
+    background: linear-gradient(135deg, #E5C158 0%, #D4AF37 50%, #B8941F 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.btn-gold {
+    background: linear-gradient(135deg, #E5C158 0%, #D4AF37 100%);
+    color: #0d0d0d;
+}
+.btn-gold:hover {
+    background: linear-gradient(135deg, #D4AF37 0%, #B8941F 100%);
 }
 
 .font-display {
@@ -38,7 +54,7 @@ html, body {
 
 /* Custom scrollbar */
 ::-webkit-scrollbar { width: 10px; height: 10px; }
-::-webkit-scrollbar-track { background: #0a0a0a; }
+::-webkit-scrollbar-track { background: #0d0d0d; }
 ::-webkit-scrollbar-thumb { background: #2a2a2a; border-radius: 6px; }
 ::-webkit-scrollbar-thumb:hover { background: #3a3a3a; }
 
@@ -53,9 +69,11 @@ html, body {
     mix-blend-mode: overlay;
 }
 
-/* Hero overlay */
+/* Hero overlay - deeper cinematic for premium look */
 .hero-overlay {
-    background: linear-gradient(180deg, rgba(10,10,10,0.55) 0%, rgba(10,10,10,0.75) 60%, rgba(10,10,10,1) 100%);
+    background:
+        radial-gradient(ellipse at center, rgba(13,13,13,0.35) 0%, rgba(13,13,13,0.85) 70%, rgba(13,13,13,1) 100%),
+        linear-gradient(90deg, rgba(13,13,13,0.65) 0%, rgba(13,13,13,0.25) 40%, rgba(13,13,13,0.55) 100%);
 }
 
 /* Marquee */

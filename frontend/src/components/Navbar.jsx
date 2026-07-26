@@ -24,7 +24,7 @@ export const Navbar = () => {
     { label: "Features", href: "/#features", testId: "nav-features-link" },
     { label: "How it works", href: "/#how-it-works", testId: "nav-how-link" },
     { label: "Pricing", href: "/#pricing", testId: "nav-pricing-link" },
-    { label: "Blog", href: "/blog", testId: "nav-blog-link" },
+    { label: "Journal", href: "/blog", testId: "nav-blog-link" },
     { label: "Contact", href: "/#contact", testId: "nav-contact-link" },
   ];
 
@@ -37,12 +37,9 @@ export const Navbar = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-5 md:px-8 h-16 flex items-center justify-between">
-        <Link to="/" data-testid="nav-logo" className="flex items-center gap-2.5">
-          <img src={APP_ICON} alt="FitX" className="h-9 w-9 rounded-lg" />
-          <span className="font-display text-2xl font-black tracking-tight uppercase">
-            Fit<span className="text-[#D4AF37]">X</span>
-          </span>
+      <div className="max-w-7xl mx-auto px-5 md:px-8 h-20 flex items-center justify-between">
+        <Link to="/" data-testid="nav-logo" className="flex items-center">
+          <img src={APP_ICON} alt="FitX — Elevate Your Fitness Journey" className="h-14 md:h-16 w-auto object-contain" />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-9">

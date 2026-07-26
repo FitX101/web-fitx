@@ -39,7 +39,7 @@ export const Pricing = () => (
   <section
     id="pricing"
     data-testid="pricing-section"
-    className="relative bg-[#0A0A0A] py-24 md:py-32 border-t border-white/5"
+    className="relative bg-[#0D0D0D] py-24 md:py-32 border-t border-white/5"
   >
     <div className="max-w-7xl mx-auto px-5 md:px-8">
       <div className="text-center max-w-3xl mx-auto">
@@ -63,7 +63,7 @@ export const Pricing = () => (
             className={`relative rounded-md p-7 md:p-8 transition-all ${
               p.accent
                 ? "bg-[#D4AF37] text-black border border-[#D4AF37]"
-                : "bg-[#141414] border border-white/10 hover:border-white/25"
+                : "bg-[#121212] border border-white/10 hover:border-white/25"
             }`}
           >
             {p.accent && (

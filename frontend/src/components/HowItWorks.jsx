@@ -23,7 +23,7 @@ export const HowItWorks = () => (
   <section
     id="how-it-works"
     data-testid="how-it-works-section"
-    className="relative bg-[#141414] py-24 md:py-32 border-y border-white/5"
+    className="relative bg-[#121212] py-24 md:py-32 border-y border-white/5"
   >
     <div className="max-w-7xl mx-auto px-5 md:px-8">
       <div className="grid grid-cols-12 gap-8 items-end">
@@ -52,7 +52,7 @@ export const HowItWorks = () => (
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="relative bg-[#0A0A0A] border border-white/5 rounded-md p-7 md:p-8 hover:border-white/20 transition-colors"
+              className="relative bg-[#0D0D0D] border border-white/5 rounded-md p-7 md:p-8 hover:border-white/20 transition-colors"
             >
               <div className="absolute -top-4 left-7 font-display text-6xl font-black text-[#D4AF37] leading-none">
                 0{i + 1}

@@ -14,7 +14,7 @@ export const Hero = () => {
         data-testid="hero-bg-video"
         className="absolute inset-0 h-full w-full object-cover"
         src={HERO_VIDEO}
-        poster="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1920&q=80&auto=format&fit=crop"
+        poster="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=80&auto=format&fit=crop"
         autoPlay
         loop
         muted
@@ -117,13 +117,13 @@ export const Hero = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -bottom-6 -left-10 px-4 py-3 bg-[#141414] border border-white/10 rounded-md backdrop-blur-md">
+              <div className="absolute -bottom-6 -left-10 px-4 py-3 bg-[#121212] border border-white/10 rounded-md backdrop-blur-md">
                 <div className="text-[10px] uppercase tracking-widest text-zinc-500">Today</div>
                 <div className="font-display text-2xl font-black text-white">
                   847 <span className="text-[#D4AF37] text-sm">kcal burned</span>
                 </div>
               </div>
-              <div className="absolute -top-4 -right-6 px-4 py-3 bg-[#141414] border border-white/10 rounded-md backdrop-blur-md">
+              <div className="absolute -top-4 -right-6 px-4 py-3 bg-[#121212] border border-white/10 rounded-md backdrop-blur-md">
                 <div className="text-[10px] uppercase tracking-widest text-zinc-500">Streak</div>
                 <div className="font-display text-2xl font-black text-white">
                   21 <span className="text-[#D4AF37] text-sm">days</span>
@@ -135,7 +135,7 @@ export const Hero = () => {
       </div>
 
       {/* Bottom gradient fade */}
-      <div className="absolute bottom-0 inset-x-0 h-32 bg-gradient-to-b from-transparent to-[#0A0A0A] z-10 pointer-events-none" />
+      <div className="absolute bottom-0 inset-x-0 h-32 bg-gradient-to-b from-transparent to-[#0D0D0D] z-10 pointer-events-none" />
     </section>
   );
 };

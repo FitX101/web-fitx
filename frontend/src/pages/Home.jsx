@@ -5,6 +5,7 @@ import { HowItWorks } from "@/components/HowItWorks";
 import { Screenshots } from "@/components/Screenshots";
 import { Pricing } from "@/components/Pricing";
 import { Testimonials } from "@/components/Testimonials";
+import { JournalPreview } from "@/components/JournalPreview";
 import { Newsletter } from "@/components/Newsletter";
 import { Contact } from "@/components/Contact";
 
@@ -18,6 +19,7 @@ export default function Home() {
       <Screenshots />
       <Pricing />
       <Testimonials />
+      <JournalPreview />
       <Newsletter />
       <Contact />
     </main>

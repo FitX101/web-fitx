@@ -9,7 +9,7 @@ import BlogPost from "@/pages/BlogPost";
 
 function App() {
   return (
-    <div className="App bg-[#0A0A0A] text-white min-h-screen">
+    <div className="App bg-[#0D0D0D] text-white min-h-screen">
       <BrowserRouter>
         <Navbar />
         <Routes>

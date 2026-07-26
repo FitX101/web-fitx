@@ -32,7 +32,7 @@ export const Contact = () => {
     <section
       id="contact"
       data-testid="contact-section"
-      className="relative bg-[#141414] py-24 md:py-32 border-t border-white/5"
+      className="relative bg-[#121212] py-24 md:py-32 border-t border-white/5"
     >
       <div className="max-w-7xl mx-auto px-5 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
         <div>
@@ -49,7 +49,7 @@ export const Contact = () => {
 
           <ul className="mt-10 space-y-5">
             <li className="flex items-start gap-4">
-              <div className="h-11 w-11 grid place-items-center rounded-md bg-[#0A0A0A] border border-white/10 text-[#D4AF37]">
+              <div className="h-11 w-11 grid place-items-center rounded-md bg-[#0D0D0D] border border-white/10 text-[#D4AF37]">
                 <Mail size={18} />
               </div>
               <div>
@@ -64,7 +64,7 @@ export const Contact = () => {
               </div>
             </li>
             <li className="flex items-start gap-4">
-              <div className="h-11 w-11 grid place-items-center rounded-md bg-[#0A0A0A] border border-white/10 text-[#D4AF37]">
+              <div className="h-11 w-11 grid place-items-center rounded-md bg-[#0D0D0D] border border-white/10 text-[#D4AF37]">
                 <Phone size={18} />
               </div>
               <div>
@@ -81,7 +81,7 @@ export const Contact = () => {
           </ul>
         </div>
 
-        <form onSubmit={submit} data-testid="contact-form" className="bg-[#0A0A0A] border border-white/5 rounded-md p-7 md:p-9">
+        <form onSubmit={submit} data-testid="contact-form" className="bg-[#0D0D0D] border border-white/5 rounded-md p-7 md:p-9">
           <div className="space-y-4">
             <div>
               <label className="text-[10px] uppercase tracking-[0.25em] text-zinc-500">Name</label>
@@ -91,7 +91,7 @@ export const Contact = () => {
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
                 placeholder="Jane Doe"
                 data-testid="contact-name-input"
-                className="mt-2 h-12 bg-[#141414] border-white/10 text-white placeholder:text-zinc-500 focus-visible:ring-[#D4AF37]"
+                className="mt-2 h-12 bg-[#121212] border-white/10 text-white placeholder:text-zinc-500 focus-visible:ring-[#D4AF37]"
               />
             </div>
             <div>
@@ -103,7 +103,7 @@ export const Contact = () => {
                 onChange={(e) => setForm({ ...form, email: e.target.value })}
                 placeholder="you@email.com"
                 data-testid="contact-email-input"
-                className="mt-2 h-12 bg-[#141414] border-white/10 text-white placeholder:text-zinc-500 focus-visible:ring-[#D4AF37]"
+                className="mt-2 h-12 bg-[#121212] border-white/10 text-white placeholder:text-zinc-500 focus-visible:ring-[#D4AF37]"
               />
             </div>
             <div>
@@ -115,7 +115,7 @@ export const Contact = () => {
                 onChange={(e) => setForm({ ...form, message: e.target.value })}
                 placeholder="Tell us what's on your mind..."
                 data-testid="contact-message-input"
-                className="mt-2 bg-[#141414] border-white/10 text-white placeholder:text-zinc-500 focus-visible:ring-[#D4AF37]"
+                className="mt-2 bg-[#121212] border-white/10 text-white placeholder:text-zinc-500 focus-visible:ring-[#D4AF37]"
               />
             </div>
             <button

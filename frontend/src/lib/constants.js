@@ -4,7 +4,7 @@ export const PLAY_STORE_URL =
   "https://play.google.com/store/apps/details?id=com.fitx.health";
 
 export const APP_ICON =
-  "https://play-lh.googleusercontent.com/HH0v9kazqAJAKemm4uTVhBJTgNoUxahHvbbGusz1kZ9-8O0k_Z5qfe4prLT-MiKGjrAjJS2c8orC0yVB9WHCQJE=w240-h480-rw";
+  "https://customer-assets-7cd3h4nn.emergentagent.net/job_fitx-coach-1/artifacts/ervq3blp_ChatGPT%20Image%20Jun%2015%2C%202026%20at%2011_14_54%20PM.png";
 
 export const SCREENSHOTS = [
   "https://play-lh.googleusercontent.com/CqfByOAcQWOIOeOISeCPwgt0rgGMZsZy0m_AxYfG2vCP-xYep2O_CgeoRoi3o0ylGZIat2wPR-2UFMWdWI4EdHA=w526-h296-rw",
@@ -15,12 +15,14 @@ export const SCREENSHOTS = [
 ];
 
 export const HERO_VIDEO =
-  "https://videos.pexels.com/video-files/3192198/3192198-hd_1920_1080_25fps.mp4";
+  "https://videos.pexels.com/video-files/2795751/2795751-hd_1920_1080_25fps.mp4";
 
 export const MOTION_VIDEOS = [
-  "https://videos.pexels.com/video-files/3192198/3192198-hd_1920_1080_25fps.mp4",
-  "https://videos.pexels.com/video-files/6975445/6975445-uhd_2732_1440_25fps.mp4",
-  "https://videos.pexels.com/video-files/3214448/3214448-uhd_2560_1440_25fps.mp4",
+  "https://videos.pexels.com/video-files/2795751/2795751-hd_1920_1080_25fps.mp4",
+  "https://videos.pexels.com/video-files/2795744/2795744-hd_1920_1080_25fps.mp4",
+  "https://videos.pexels.com/video-files/2795738/2795738-hd_1920_1080_25fps.mp4",
+  "https://videos.pexels.com/video-files/2795748/2795748-hd_1920_1080_25fps.mp4",
+  "https://videos.pexels.com/video-files/2795749/2795749-hd_1920_1080_25fps.mp4",
 ];
 
 export const SUPPORT_EMAIL = "info@fitxglobal.com";

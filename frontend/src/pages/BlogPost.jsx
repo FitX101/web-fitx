@@ -29,7 +29,7 @@ export default function BlogPost() {
 
   if (loading) {
     return (
-      <main className="pt-32 pb-24 min-h-screen bg-[#0A0A0A]">
+      <main className="pt-32 pb-24 min-h-screen bg-[#0D0D0D]">
         <div className="max-w-3xl mx-auto px-5 text-zinc-500" data-testid="blog-post-loading">Loading...</div>
       </main>
     );
@@ -37,7 +37,7 @@ export default function BlogPost() {
 
   if (notFound || !post) {
     return (
-      <main className="pt-32 pb-24 min-h-screen bg-[#0A0A0A]">
+      <main className="pt-32 pb-24 min-h-screen bg-[#0D0D0D]">
         <div className="max-w-3xl mx-auto px-5">
           <h1 className="font-display text-4xl font-black uppercase">Post not found</h1>
           <Link to="/blog" className="mt-6 inline-block text-[#D4AF37]" data-testid="back-to-blog">
@@ -49,7 +49,7 @@ export default function BlogPost() {
   }
 
   return (
-    <main data-testid="blog-post-page" className="pt-28 pb-24 bg-[#0A0A0A] min-h-screen">
+    <main data-testid="blog-post-page" className="pt-28 pb-24 bg-[#0D0D0D] min-h-screen">
       <article className="max-w-3xl mx-auto px-5 md:px-8">
         <Link
           to="/blog"
@@ -85,7 +85,7 @@ export default function BlogPost() {
           ))}
         </div>
 
-        <div className="mt-16 p-7 md:p-10 bg-[#141414] border border-white/5 rounded-md">
+        <div className="mt-16 p-7 md:p-10 bg-[#121212] border border-white/5 rounded-md">
           <div className="text-xs uppercase tracking-[0.25em] text-[#D4AF37]">// Ready to start?</div>
           <h3 className="font-display text-2xl md:text-3xl font-bold uppercase tracking-tight mt-3">
             Download FitX free

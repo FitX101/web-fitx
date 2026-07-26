@@ -48,7 +48,7 @@ const FEATURES = [
 ];
 
 export const Features = () => (
-  <section id="features" data-testid="features-section" className="relative bg-[#0A0A0A] py-24 md:py-32">
+  <section id="features" data-testid="features-section" className="relative bg-[#0D0D0D] py-24 md:py-32">
     <div className="max-w-7xl mx-auto px-5 md:px-8">
       <div className="max-w-3xl">
         <div className="text-xs md:text-sm font-bold tracking-[0.25em] uppercase text-[#D4AF37]">
@@ -74,7 +74,7 @@ export const Features = () => (
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.5, delay: i * 0.05 }}
-              className={`col-span-12 ${f.span} group relative bg-[#141414] border border-white/5 hover:border-white/20 rounded-md p-7 md:p-8 transition-all duration-300 hover:-translate-y-1`}
+              className={`col-span-12 ${f.span} group relative bg-[#121212] border border-white/5 hover:border-white/20 rounded-md p-7 md:p-8 transition-all duration-300 hover:-translate-y-1`}
             >
               <div className="flex items-center justify-between">
                 <div className="h-12 w-12 grid place-items-center rounded-md bg-[#D4AF37]/10 border border-[#D4AF37]/30 text-[#D4AF37]">

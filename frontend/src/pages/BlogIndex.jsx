@@ -23,17 +23,18 @@ export default function BlogIndex() {
   }, []);
 
   return (
-    <main data-testid="blog-index-page" className="pt-32 pb-24 bg-[#0A0A0A] min-h-screen">
+    <main data-testid="blog-index-page" className="pt-32 pb-24 bg-[#0D0D0D] min-h-screen">
       <div className="max-w-7xl mx-auto px-5 md:px-8">
         <div className="max-w-3xl">
           <div className="text-xs md:text-sm font-bold tracking-[0.25em] uppercase text-[#D4AF37]">
-            // The FitX Journal
+            // FitX Journal
           </div>
           <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-black uppercase tracking-tight mt-5 leading-[0.95]">
-            Train. Eat. <span className="text-[#D4AF37]">Read.</span>
+            Train. Eat. <span className="text-[#E5C158]">Read.</span>
           </h1>
           <p className="mt-5 text-zinc-400 text-base md:text-lg max-w-2xl">
-            Workouts, nutrition science, and behind-the-scenes stories from the FitX team and community.
+            High-signal essays on training, nutrition and behavior science —
+            from the FitX team, coaches, and dietitians.
           </p>
         </div>
 
@@ -46,7 +47,7 @@ export default function BlogIndex() {
                 to={`/blog/${p.slug}`}
                 key={p.id}
                 data-testid={`blog-card-${i}`}
-                className="group bg-[#141414] border border-white/5 hover:border-white/25 rounded-md overflow-hidden transition-all hover:-translate-y-1"
+                className="group bg-[#121212] border border-white/5 hover:border-white/25 rounded-md overflow-hidden transition-all hover:-translate-y-1"
               >
                 <div className="aspect-[16/10] overflow-hidden">
                   <img

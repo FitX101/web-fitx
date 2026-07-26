@@ -30,7 +30,7 @@ export const Newsletter = () => {
     <section
       id="newsletter"
       data-testid="newsletter-section"
-      className="relative bg-[#0A0A0A] py-20 md:py-28 border-t border-white/5"
+      className="relative bg-[#0D0D0D] py-20 md:py-28 border-t border-white/5"
     >
       <div className="max-w-4xl mx-auto px-5 md:px-8 text-center">
         <div className="text-xs md:text-sm font-bold tracking-[0.25em] uppercase text-[#D4AF37]">
@@ -56,7 +56,7 @@ export const Newsletter = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             data-testid="newsletter-email-input"
-            className="h-12 bg-[#141414] border-white/10 text-white placeholder:text-zinc-500 focus-visible:ring-[#D4AF37]"
+            className="h-12 bg-[#121212] border-white/10 text-white placeholder:text-zinc-500 focus-visible:ring-[#D4AF37]"
           />
           <button
             type="submit"
